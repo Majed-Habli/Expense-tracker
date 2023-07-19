@@ -23,6 +23,7 @@ function addItem() {
 
   expenseList.append(todoItem)
   totalAmount += AmountInput.val(); 
+  $(".totalAmount").text(totalAmount);
   ItemInput.val("");
   AmountInput.val("");
 }
@@ -31,14 +32,6 @@ $(document).ready(function () {
   const addButton = $("#add-button");
   addButton.click(addItem);
 
-  
-  $("#expense-name-input").keyup(function (event) {
-    if (event.keyCode === 13) {
-      addItem()
-    }
-  }
-  )
-  
   $(".totalAmount").text(totalAmount);
 
 })

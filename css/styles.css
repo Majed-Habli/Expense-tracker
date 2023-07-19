@@ -60,6 +60,10 @@ html,body{
     border: 1px solid rgb(32, 32, 32);
     border-radius: 6px;
 }
+.col{
+    display: flex;
+    column-gap: 1rem;
+}
 .body-right{
     display: flex;
     flex: 2;
