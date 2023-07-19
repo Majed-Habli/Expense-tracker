@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100vh;
+    background-color: blue;
+}
+.app-container{
+    background-color: aqua;
+}
+.app-body{
+    width: 100%;
+    display: flex;
+    /* flex-direction: row; */
+}
+.body-left{
+    width: 100%;
+    background-color: cadetblue;
+}
+.body-right{
+    width: 100%;
+    background-color: chartreuse;
+}
