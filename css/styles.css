@@ -34,13 +34,27 @@ html,body{
     justify-content: center;
     flex-direction: column;
     row-gap: 1rem;
-    background-color: chartreuse;
+    /* background-color: chartreuse; */
+}
+.body-container button{
+    width: 5rem;
+    height: 2rem;
+    border: 1px transparent solid;
+    border-radius: 8px;
+    color: white;
+    background-color: black;
 }
 .row{
     display: flex;
     flex-direction: column;
-    row-gap: 0.26rem;
-    background-color: aqua;
+    row-gap: 0.5rem;
+    /* background-color: aqua; */
+}
+.row input{
+    width:240px;
+    height: 40px;
+    border: 1px solid rgb(32, 32, 32);
+    border-radius: 6px;
 }
 .body-right{
     display: flex;
