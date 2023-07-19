@@ -9,6 +9,8 @@ html,body{
     background-color: blue;
 }
 .app-container{
+    width: 100%;
+    height: 100%;
     background-color: aqua;
 }
 .app-body{
@@ -16,9 +18,20 @@ html,body{
     display: flex;
     /* flex-direction: row; */
 }
+.body-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
 .body-left{
     width: 100%;
     background-color: cadetblue;
+}
+.row{
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.26rem;
 }
 .body-right{
     width: 100%;
