@@ -1,3 +1,5 @@
+let totalAmount = 0;
+
 function todoItemElement(text, amount) {
   return `<li>
     <span class="text">${text}</span>
@@ -20,17 +22,23 @@ function addItem() {
   })
 
   expenseList.append(todoItem)
-  ItemInput.val("")
+  totalAmount += AmountInput.val(); 
+  ItemInput.val("");
+  AmountInput.val("");
 }
 
 $(document).ready(function () {
   const addButton = $("#add-button");
   addButton.click(addItem);
 
+  
   $("#expense-name-input").keyup(function (event) {
     if (event.keyCode === 13) {
       addItem()
     }
   }
   )
+  
+  $(".totalAmount").text(totalAmount);
+
 })
